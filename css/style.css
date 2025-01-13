@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Overpass";
+  src: 
+    local( "Overpass" ),
+    url( "../fonts/Overpass.ttf" ) format( "truetype" );
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url( "../fonts/Overpass.ttf" ) format( "truetype" );
+  font-weight: 700;
+}
+
+:root {
+  /* Primary color */
+  --Color-Primary-Orange: hsl(25, 97%, 53%);
+
+  /* Neutral colors */
+  --Color-White: hsl(0, 0%, 100%);
+  --Color-Light-Grey: hsl(217, 12%, 63%);
+  --Color-Dark-Blue: hsl(213, 19%, 18%);
+  --Color-Very-Dark-Blue: hsl(216, 12%, 8%);
+
+  /* Font size */
+  --Font-size-paragraph: 0.938rem;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--Color-Very-Dark-Blue);
+  color: var(--Color-Light-Grey);
+  font-family: "Overpass", sans-serif;
+  font-size: var(--Font-size-paragraph);
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Color-Light-Grey);
+}
+
+/************* Content styling ************/
+
+.grey-box {
+  background-color: var(--Color-Dark-Blue);
+  margin: 10rem auto;
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.container {
+  padding: 2rem;
+}
+
+/* Star styling */
+.grey-box picture img {
+  padding: .9rem;
+  border-radius: 50%;
+}
+
+.text-content {
+  width: 100%;
+}
+
+/* Text content */
+.text-content h1,
+.text-content p,
+ul, button {
+  margin-top: 1rem;
+}
+
+.text-content h1 {
+  color: var(--Color-White);
+  font-size: 1.7em;
+}
+
+/* Rating number*/
+
+.rating-number li {
+  display: flex;
+  gap: 1rem;
+}
+
+.rating-number li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  width: 20%;
+  padding: .8rem 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.grey-box picture img,
+.rating-number li a {
+  background-color: hsl(217, 12%, 63%, 10%);
+  transition: all ease .4s;
+}
+
+.rating-number li a:hover {
+  background-color: var(--Color-Primary-Orange);
+  color: var(--Color-Dark-Blue);
+}
+
+.rating-number li a::selection {
+  background-color: var(--Color-White);
+  color: var(--Color-Dark-Blue);
+}
+
+ul, button {
+  margin-top: 1.5rem;
+}
+
+/* Submit button styling */
+
+.btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: .6rem;
+  background-color: var(--Color-Primary-Orange);
+  color: var(--Color-Very-Dark-Blue);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all ease .2s;
+}
+
+.btn:hover {
+  background-color: var(--Color-White);
+}
+
+
+
+/* *********************** Thank you state start *************************** */
+
+.content {
+  margin: 8rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  /* background-color: var(--Color-Dark-Blue); */
+  background: rgb(37,45,55);
+  background: linear-gradient(180deg, rgba(37,45,55,1) 39%, rgba(18,20,23,1) 100%);
+  width: 86%;
+  border-radius: 1rem;
+}
+
+.rating p,
+.thanks h1,
+.thanks p {
+  margin-top: 1.2rem;
+}
+
+.rating p {
+  color: var(--Color-Primary-Orange);
+  margin-top: 1.5rem;
+  padding: .5rem 1rem;
+  background-color: hsl(217, 12%, 63%, 10%);
+  border-radius: 2rem;
+}
+
+.thanks h1 {
+  color: var(--Color-White);
+  font-size: 1.7em;
+}
+
