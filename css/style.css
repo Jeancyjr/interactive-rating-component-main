@@ -93,7 +93,7 @@ a {
 
 .grey-box {
   background-color: var(--Color-Dark-Blue);
-  margin: 10rem auto;
+  margin: 9rem auto;
   width: 90%;
   border-radius: 1rem;
 }
@@ -126,34 +126,32 @@ ul, button {
 
 /* Rating number*/
 
-.rating-number li {
+.rating-number {
   display: flex;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.rating-number li a {
+.rating-number li {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: .6rem 1.1rem;
   font-weight: 700;
-  width: 20%;
-  padding: .8rem 0;
-  border-radius: 50%;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 .grey-box picture img,
-.rating-number li a {
+.rating-number li {
   background-color: hsl(217, 12%, 63%, 10%);
-  transition: all ease .4s;
+  transition: all ease .3s;
 }
 
-.rating-number li a:hover {
+.rating-number li:hover {
   background-color: var(--Color-Primary-Orange);
-  color: var(--Color-Dark-Blue);
+  color: var(--Color-Very-Dark-Blue);
 }
 
-.rating-number li a::selection {
+.rating-number li:active {
   background-color: var(--Color-White);
   color: var(--Color-Dark-Blue);
 }
