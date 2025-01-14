@@ -24,6 +24,9 @@
 
   /* Font size */
   --Font-size-paragraph: 0.938rem;
+
+  /* Box shadow */
+  --box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -138,6 +141,7 @@ ul, button {
   font-weight: 700;
   cursor: pointer;
   border-radius: 50%;
+  box-shadow: var(--box-shadow);
 }
 
 .grey-box picture img,
@@ -214,5 +218,46 @@ ul, button {
 .thanks h1 {
   color: var(--Color-White);
   font-size: 1.7em;
+}
+
+
+/* ************ Dark/Light mode *************** */
+
+.light-mode {
+  background-color: var(--Color-White);
+  color: var(--Color-Very-Dark-Blue);
+}
+
+.component-mode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.component-mode .switch-btn {
+  position: relative;
+  bottom: .66rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: var(--box-shadow);
+  padding: .4rem;
+  width: 10%;
+  background-color: hsl(217, 12%, 63%, 10%);
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
+  transition: all ease-in-out .3s;
+}
+
+.component-mode .switch-btn:hover {
+  color: var(--Color-White);
+  box-shadow: 1px 6px 10px 8px rgba(255, 255, 255, 0.2);
+}
+
+.component-mode i {
+  color: var(--Color-Primary-Orange);
+}
+
+.component-mode i:hover {
+  color: var(--Color-White);
 }
 

@@ -8,8 +8,17 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- css -->
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/mobile.css">
+
+  <!-- js -->
+  <script src="./js/main.js" defer></script>
 
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
@@ -19,30 +28,24 @@
     <!-- Rating state start -->
     <section class="first" aria-hidden="false">
       <div class="container grey-box">
-        <picture>
-          <img src="./images/icon-star.svg" alt="">
-        </picture>
+        <div class="component-mode">
+          <picture>
+            <img src="./images/icon-star.svg" alt="">
+          </picture>
+          <button type="button" class="light-mode switch-btn" id="light-mode"><i
+              class="fa-solid fa-bolt-lightning"></i></i></button>
+        </div>
         <div class="text-content">
           <h1>How did we do?</h1>
           <p>Please let us know how we did with your support request. All feedback is appreciated
             to help us improve our offering!</p>
         </div>
-        <ul class="rating-number">
-          <li>
-            1
-          </li>
-          <li>
-            2
-          </li>
-          <li>
-            3
-          </li>
-          <li>
-            4
-          </li>
-          <li>
-            5
-          </li>
+        <ul class="rating-number" id="rating">
+          <li data-value="1">1</li>
+          <li data-value="2">2</li>
+          <li data-value="3">3</li>
+          <li data-value="4">4</li>
+          <li data-value="5">5</li>
         </ul>
         <button type="submit" class="btn">Submit</button>
       </div>
