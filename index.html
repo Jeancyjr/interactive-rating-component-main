@@ -17,26 +17,23 @@
   <link rel="stylesheet" href="./css/style.css">
   <link rel="stylesheet" href="./css/mobile.css">
 
-  <!-- js -->
-  <script src="./js/main.js" defer></script>
-
   <title>Frontend Mentor | Interactive rating component</title>
 </head>
 
 <body>
   <main>
     <!-- Rating state start -->
-    <section class="first" aria-hidden="false">
+    <section class="first" id="first-component" data-panel="first" aria-hidden="false">
       <div class="container grey-box">
         <div class="component-mode">
           <picture>
             <img src="./images/icon-star.svg" alt="">
           </picture>
-          <button type="button" class="light-mode switch-btn" id="light-mode"><i
+          <button type="button" class="switch-btn" id="light-mode"><i
               class="fa-solid fa-bolt-lightning"></i></i></button>
         </div>
         <div class="text-content">
-          <h1>How did we do?</h1>
+          <h1 id="user-question">How did we do?</h1>
           <p>Please let us know how we did with your support request. All feedback is appreciated
             to help us improve our offering!</p>
         </div>
@@ -54,13 +51,13 @@
 
   <!-- Thank you state start -->
   <main>
-    <section class="second" hidden>
+    <section id="second-component" class="second" hidden>
       <div class="container content">
         <div class="rating">
           <picture>
             <img src="./images/illustration-thank-you.svg" alt="">
           </picture>
-          <p>You selected <span>4</span> out of 5</p>
+          <p>You selected <span id="selected"></span> out of 5</p>
         </div>
         <div class="thanks">
           <h1>Thank you!</h1>
@@ -70,6 +67,8 @@
       </div>
     </section>
   </main>
+  <!-- js -->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

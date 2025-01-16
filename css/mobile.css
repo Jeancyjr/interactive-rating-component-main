@@ -63,8 +63,7 @@
 
 @media (min-width: 48rem) {
   .content {
-    display: none;
-    margin: 8rem auto;
+    margin: 10rem auto;
     width: 46%;
   }
 }

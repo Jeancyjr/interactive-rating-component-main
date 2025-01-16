@@ -224,8 +224,8 @@ ul, button {
 /* ************ Dark/Light mode *************** */
 
 .light-mode {
-  background-color: var(--Color-White);
-  color: var(--Color-Very-Dark-Blue);
+  background-color: #eff7f6;
+  color: #cfdbd5;
 }
 
 .component-mode {
@@ -259,5 +259,13 @@ ul, button {
 
 .component-mode i:hover {
   color: var(--Color-White);
+}
+
+/* ************************* */
+.rating-number li.selected {
+  background-color: var(--Color-Primary-Orange);
+  color: var(--Color-Very-Dark-Blue);
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
