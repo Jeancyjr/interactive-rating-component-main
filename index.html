@@ -29,8 +29,11 @@
           <picture>
             <img src="./images/icon-star.svg" alt="">
           </picture>
-          <button type="button" class="switch-btn" id="light-mode"><i
-              class="fa-solid fa-bolt-lightning"></i></i></button>
+          <ul class="switch-btn" id="light-mode">
+            <li>
+              <i class="fa-solid fa-bolt-lightning"></i>
+            </li>
+          </ul>
         </div>
         <div class="text-content">
           <h1 id="user-question">How did we do?</h1>
@@ -50,23 +53,21 @@
   </main>
 
   <!-- Thank you state start -->
-  <main>
-    <section id="second-component" class="second" hidden>
-      <div class="container content">
-        <div class="rating">
-          <picture>
-            <img src="./images/illustration-thank-you.svg" alt="">
-          </picture>
-          <p>You selected <span id="selected"></span> out of 5</p>
-        </div>
-        <div class="thanks">
-          <h1>Thank you!</h1>
-          <p>We appreciate you taking the time to give a rating. If you ever need more support,
-            don’t hesitate to get in touch!</p>
-        </div>
+  <section id="second-component" class="second" hidden>
+    <div class="container content">
+      <div class="rating">
+        <picture>
+          <img src="./images/illustration-thank-you.svg" alt="">
+        </picture>
+        <p>You selected <span id="selected"></span> out of 5</p>
       </div>
-    </section>
-  </main>
+      <div class="thanks">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </section>
   <!-- js -->
   <script src="./js/main.js"></script>
 </body>

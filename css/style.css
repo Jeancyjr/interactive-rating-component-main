@@ -236,6 +236,12 @@ ul, button {
 }
 
 .component-mode .switch-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.component-mode .switch-btn {
   position: relative;
   bottom: .66rem;
   cursor: pointer;
