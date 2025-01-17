@@ -95,8 +95,9 @@ a {
 /************* Content styling ************/
 
 .grey-box {
-  background-color: var(--Color-Dark-Blue);
-  margin: 9rem auto;
+  background: rgb(37,45,55);
+  background: linear-gradient(180deg, rgba(37,45,55,1) 39%, rgba(18,20,23,1) 100%);
+  margin: 10rem auto;
   width: 90%;
   border-radius: 1rem;
 }
@@ -259,13 +260,5 @@ ul, button {
 
 .component-mode i:hover {
   color: var(--Color-White);
-}
-
-/* ************************* */
-.rating-number li.selected {
-  background-color: var(--Color-Primary-Orange);
-  color: var(--Color-Very-Dark-Blue);
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
